@@ -1,0 +1,64 @@
+.portafolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgb(193, 166, 199);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  border-radius: 2%;
+  flex-wrap: wrap;
+  gap: 15px;
+
+}
+.proyecto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 400px;
+  height: 360px;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(148, 25, 148);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+}
+.proyecto:hover {
+  box-shadow: 0px 0px 20px rgba(179, 18, 211, 0.644);
+  transform: translateY(-5px);
+}
+body {
+  background-color: rgb(220, 205, 223);
+  font-family: Arial, sans-serif;
+  color: black;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  color: rgb(20, 17, 20);
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+img {
+  margin: 10px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5%;
+  flex: 0.5;
+}
+h2 {
+  font-size: 1.5rem;
+  color: rgb(148, 25, 148);
+  padding: 0;
+}
+p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
