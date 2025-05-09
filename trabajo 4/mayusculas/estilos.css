@@ -21,13 +21,6 @@ textarea {
     border: 2px solid #d949ec;
     border-radius: 10px;
 }
-h1 {
-    box-sizing: content-box;
-    width: 80%;
-    border: solid #5b6dcd 10px;
-    padding: 5px;
-}
-
 
 button {
     background-color: #b648b9;
