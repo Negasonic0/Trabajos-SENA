@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Probando Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      form {
+        max-width: 600px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      select,
+      textarea {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--todos los datos son obligatorios excepto el genero, todo los campos deben tener deben tener el place holder y el title, la contraseña debe tener minimo ocho caracteres y maximo 12, cuando le de click a label debe ponerse el input, la contraseña debe tener un simbolo en mayuscula y un numero-->
+    <h1>PROBANDO FORMULARIO</h1>
+    <form action="#" method="post">
+      <label for="name">Nombre: </label>
+      <input type="text" id="name" name="nombre" title="Ingrese su nombre" placeholder="Escriba su nombre" required><br><br>
+
+      <label for="correo">Correo Electronico: </label>
+      <input type="email" id="correo" name="correo" title="Ingrese su correo" placeholder="Escriba su correo electronico" required><br><br>
+
+      <label for="contra">Contraseña: </label>
+      <input type="password" id="contra" name="contraseña" title="La contraseña debe entre 8 a 12 caracteres y debe tener una mayuscula, numeros y simbolos (@-_$#/()=?¿!)" placeholder="Cree la contraseña"  minlength="8" maxlength="12" pattern="(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,12}" required><br><br>
+
+      <label>Genero: </label>
+      <label style="color: rgb(160, 153, 153);">(opcional)</label><br>
+      <label for="hom">Hombre: </label>
+      <input type="radio" id="hom" name="genero"><br>
+      <label for="muj">Mujer: </label>
+      <input type="radio" id="muj" name="genero"><br>
+      <label for="hel">Helicoptero: </label>
+      <input type="radio" name="genero" id="hel"><br>
+      <label for="no-digo">No quiero decirlo: </label>
+      <input type="radio" name="genero" id="no-digo"><br><br>
+
+      <label for="Int">Interes: </label><br>
+      <label for="juegos">Videojuegos: </label>
+      <input type="checkbox" id="juegos" name="interes"><br>
+      <label for="series">Series: </label>
+      <input type="checkbox" id="series" name="interes"><br>
+      <label for="peliculas">Peliculas: </label>
+      <input type="checkbox" id="peliculas" name="interes"><br><br>
+
+      <label for="pais">País: </label>
+      <select name="pais" id="pais" required>
+        <option value="" disabled selected>Seleccione un país</option>
+        <option value="colombia">Colombia</option>
+        <option value="mexico">México</option>
+        <option value="argentina">Argentina</option>
+        <option value="españa">España</option>
+      </select><br><br>
+
+      <label for="comen">Comentarios: </label>
+      <textarea name="comentarios" id="comen" rows="4" cols="50" title="si tienes algo mas que decir ponlo aqui bro :v" placeholder="algo mas que decir??"></textarea><br><br>
+
+
+     <input type="submit">
+    </form>
+  </body>
+</html>
