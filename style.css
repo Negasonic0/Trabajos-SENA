@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-  max-width: 400px;
+  width: 400px;
   height: 360px;
   padding: 5px;
   background-color: rgb(255, 255, 255);
@@ -47,7 +47,8 @@ a {
 }
 img {
   margin: 10px;
-  width: 100%;
+  width: 99%;
+  height: 60%;
   margin: 0 auto;
   border-radius: 5%;
   flex: 0.5;
@@ -61,4 +62,13 @@ p {
   font-size: 1rem;
   margin: 0;
   padding: 0;
+}
+#text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8em;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 1rem;
 }

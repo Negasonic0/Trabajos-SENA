@@ -1,0 +1,274 @@
+body {
+  background-color: #141414;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.imagen {
+  position: relative;
+  background-image: url('absolute-cinema.webp');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  overflow: hidden;
+}
+
+.imagen::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Oscurece con transparencia */
+  z-index: 0;
+}
+
+.imagen * {
+  position: relative;
+  z-index: 1;
+}
+
+h1{
+  color: #E50914;
+  font-weight: bold;
+}
+
+#bienvenida{
+  color: #E50914;
+  font-weight: bold;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header h1 {
+ margin-right: 30%;
+}
+
+.header button {
+  padding: 10px 20px;
+}
+
+label {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+#idioma {
+  background-color: #141414;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #E50914;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+button {
+  background-color: #E50914;
+  color: white;
+  font-size: 20px;
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hover:hover {
+  background-color: #B00710;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  column-gap: 5px;
+}
+
+h3 {
+  font-size: 4vw;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  background-color: #141414;
+  width: 30vw;
+  font-size: 20px;
+  margin-right: 5px;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #E50914;
+}
+
+img {
+  height: 90vh;
+  border-radius: 10px;
+}
+
+.publicidad {
+  background-color: #141414;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  gap: 20px; 
+  text-align: center;
+  margin: 20px;
+}
+
+.carousel {
+  max-width: 800px;
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+#tendencias, #categorias {
+  flex: 1;
+  min-width: 400px; /
+}
+
+ #categorias {
+  display: flex;
+  justify-content: space-evenly;   
+  flex-wrap: wrap;
+  text-align: center;
+  min-width: none;
+}
+
+.categoria {
+  background: linear-gradient(135deg, #E50914, #420707);
+  border-radius: 5px;
+  box-shadow: #420707 0px 0px 20px 5px;
+  padding: 10px;
+  width: 25vw;
+  height: 250px; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-around; 
+  text-align: center;
+  margin: 20px;
+}
+
+.categoria:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease;
+}
+.accordion-button {
+  background-color: #B71C1C;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  height: 60px;
+}
+.accordion-button:hover {
+  background-color: #E50914;
+  color: white;
+}
+
+.accordion-button:focus {
+  color: white;
+  background-color: #E50914;
+}
+
+.accordion-item {
+  background-color: #343434;
+  color: white;
+  border: none;
+  width: 65vw;
+  margin: 7px auto;
+  border-radius: 5px;
+}
+.accordion {
+  background-color: #242424;
+  color: white;
+  width: 65vw;
+  border-radius: 5px;
+  margin: 20px auto;
+  box-shadow: #420707 0px 0px 20px 5px;  
+}
+
+.faq {
+  background-color: #141414;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 20px;
+  gap: 10px;
+}
+
+#title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8em;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 1rem;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #141414;
+  color: rgb(90, 88, 88);
+  padding: 20px;
+  width: 100%;
+}
+#footer a {
+  color: #ff4444;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+#footer a:hover {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+#footer ul {
+  display: flex;
+  color: #343434;
+  font-style: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#footer select {
+  margin-bottom: 20px;
+}
+.regis {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.regis input{
+  width: 45vw;
+}
